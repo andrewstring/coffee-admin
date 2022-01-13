@@ -1,0 +1,25 @@
+{
+  "name": "coffee-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "initDrinks": "node Db/Commands/collections.js initDrinks",
+    "dropDrinks": "node Db/Commands/collections.js dropDrinks",
+    "initBakedGoods": "node Db/Commands/collections.js initBakedGoods",
+    "dropBakedGoods": "node Db/Commands/collections.js dropBakedGoods",
+    "initAdminCredentials": "node Db/Commands/collections.js initAdminCredentials",
+    "dropAdminCredentials": "node Db/Commands/collections.js dropAdminCredentials",
+    "initTokens": "node Db/Commands/collections.js initTokens",
+    "dropTokens": "node Db/Commands/collections.js dropTokens",
+    "deleteAllAdmins": "node Db/Commands/adminCredentials.js deleteAllAdmins",
+    "deleteAdmin": "node Db/Commands/adminCredentials.js deleteAdmin",
+    "createAdmin": "node Db/Commands/adminCredentials.js createAdmin"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "mongodb": "^4.3.0"
+  }
+}
